@@ -31,7 +31,7 @@
 
 
                 if (isset($_POST['submit'])) {
-                 // mengambil value dari form
+        
                  $Angka1 = $_POST['number1'];
                  $Angka2 = $_POST['number2'];
                  $Angka3 = $_POST['number3'];
@@ -41,26 +41,11 @@
                      echo "<h2>Standar Deviasi nya adalah <strong> $hasil </h2>";
 
              
-                     // menyimpan value hasil ke dalam session
-                 // memvalidasi inputan apakah ada isinya atau tidak, jika tidak ada value akan menampilkan pesan seperti dibawah
-                }else {
+                  }else {
                    echo "<p style='color: red'>*Error:* Semua input harus diisi dengan angka!</p>";
              
                  }
              
-             
-                 // menginisialisasi variabel hasil dengan nilai dari session yang telah dibuat pada page 1
-                 // $hasil = isset($_SESSION['hasil_standar_deviasi']) ? $_SESSION['hasil_standar_deviasi'] : "";
-             
-                 // Hapus hasil dari session agar tidak ditampilkan kembali
-                 // unset($_SESSION['hasil_standar_deviasi']);
-                
-
-                // if ($hasil !== "") {
-                //     echo "<h2>Standar Deviasi nya adalah <strong> $hasil </h2>";
-                // } else {
-                //     echo "<p>Belum ada hasil perhitungan yang tersedia.</p>";
-                // }
                 ?>
                  <div>
                         <button class="btn">back</button>
@@ -87,21 +72,3 @@
 
 </body>
 </html>
-<!-- 
-<div class="row">
-                    <div class="col-sm-12">
-                      <h1>Rumus Standar Deviasi</h1>
-                      <h2>S = Akar dari (total Varians : Rata-Rata)</h2>
-                      <h2>Varians = (Xi - Rata-Rata)^2</h2>
-                      <br></br>
-                      <h1>Hasil Perhitungan</h1>
-                      <?php
-                      if ($hasil !== "") {
-                          echo "<h2>Standar Deviasi nya adalah <strong> $hasil </h2>";
-                      } else {
-                          echo "<p>Belum ada hasil perhitungan yang tersedia.</p>";
-                      }
-                      ?>
-                    </div>
-                    
-                </div> -->

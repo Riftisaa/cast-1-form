@@ -26,22 +26,13 @@
                     </div>
                     <div class="form_group">
                         <label class="sub_title" for="Number 3">Number 3</label>
-                        <input placeholder="Masukan Angka" id="number3" name="number3" class="form_style" type="number">
+                        <input placeholder="Masukan Angka ketiga" id="number3" name="number3" class="form_style" type="number">
                     </div>
                     <div>
                         <button  type="submit" class="btn" name="submit">Calculate</button>
                     </div>
                     <div>
-                        
-    <?php
-// session_start();
-
-// menginisialisasi variabel hasil
-// $hasil = "";
-
-// Periksa jika form telah disubmit
-
-?>
+          
                     </div>
                 
             </form></div></div>
